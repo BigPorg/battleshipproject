@@ -62,11 +62,27 @@ function update_board() {
 update_board();
 
 document.querySelector("#gameBoard").addEventListener("click", function(event) {
-    if(event.target.getAttribute("class")==="clickablebox"){
-        console.log(event.target)
+    if(event.target.getAttribute("class") === "clickablebox"){
+        console.log(event.target);
+        console.log(event.target.id);
+
+    if((event.target.id == 00) || (event.target.id == 10) || (event.target.id == 20) || (event.target.id == 30)
+    || (event.target.id == 25) || (event.target.id == 26) || (event.target.id == 27)
+    || (event.target.id == 56) || (event.target.id == 66) || (event.target.id == 76) || (event.target.id == 86) 
+    || (event.target.id == 96) || (event.target.id == 22) || (event.target.id == 23)
+    || (event.target.id == 71) || (event.target.id == 72) || (event.target.id == 73))
+    {
+        console.log("That is a hit");
+    } else {
+        console.log("Ya missed");  }
+    
     }
+        
+    
 
 })
+
+
 
 // function receiveAttack() {
     //     // player clicks (click event) opponents game board

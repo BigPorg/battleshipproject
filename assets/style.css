@@ -20,12 +20,29 @@ h2 {
     line-height: 35px;
 }
 
-tbody td, tbody th {
-  padding: .5rem .625rem .625rem;
-  color: #14679e;
-  background-color: navy;
-  text-align: center;
+.grid { margin:1em auto; border-collapse:collapse }
+.grid td {
+    cursor:pointer;
+    width:30px; height:30px;
+    border:1px solid #ccc;
+    text-align:center;
+    font-family:sans-serif; font-size:13px
 }
+.grid td.clicked {
+    background-color:yellow;
+    font-weight:bold; color:red;
+}
+tbody td, tbody th {
+padding: .5rem .625rem .625rem;
+color: #14679E;
+background-color: navy;
+text-align: center;
+}
+td.clicked {
+  background-color:yellow;
+  font-weight:bold; color:red;
+}
+
 
 li {
 list-style: none;
