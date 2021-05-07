@@ -24,9 +24,8 @@
     <main>
         <div class="holy-grail-grid">
             <div class="holy-grail-header">
-                <h1>Battleship</h1>
-                <h2>Command your fleet and avoid being detected by enemy ships.<br>There are two fleets at
-                    sea, but only one will survive.</h2>
+                <h1>Priateship</h1>
+                <h2>Sink enemy's ship by clicking boxes on grid.<br></h2>
             </div>
 
             <div class="holy-grail-left">
@@ -48,29 +47,27 @@
                 <!-- </div>
                 </div> -->
 
-                <p>AGI FUN FACTS PLACEHOLDER Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit,
-                    quisquam minus ad vitae incidunt quis exercitationem natus nam unde officia eos itaque recusandae
-                    sequi distinctio a, temporibus inventore minima.</p>
+                <p><strong>Welcome to Priateship, You will have 40 clicks to sink ALL ships.</strong></p>
 
-                <div class="buttons"><button id="start">Start</button>
+                <div class="buttons">
+                    <!-- <button id="start">Start</button> -->
                     <!-- </div> -->
                     <button id="play-again">Play again</button>
                 </div>
 
                 <table class="grid">
-                    <tbody id="clickableBox"></tbody>
+                    <tbody id="clickableBox">
                     <tr>
-                        <td class="clickable" id=00></td>
-                        <td onClick='' class="clickableBox" id=01></td>
-                        <td onClick='' class="clickableBox" id=02></td>
-                        <td onClick='' class="clickableBox" id=03></td>
+                        <td class="clickableBox" id=00></td>
+                        <td class="clickableBox" id=01></td>
+                        <td class="clickableBox" id=02></td>
+                        <td class="clickableBox" id=03></td>
                         <td class="clickableBox" id=04></td>
                         <td class="clickableBox" id=05></td>
                         <td class="clickableBox" id=06></td>
                         <td class="clickableBox" id=07></td>
                         <td class="clickableBox" id=08></td>
                         <td class="clickableBox" id=09></td>
-                        <td class="clickableBox" id=10></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=11></td>
@@ -83,7 +80,6 @@
                         <td class="clickableBox" id=18></td>
                         <td class="clickableBox" id=19></td>
                         <td class="clickableBox" id=20></td>
-                        <td class="clickableBox" id=21></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=22></td>
@@ -96,7 +92,6 @@
                         <td class="clickableBox" id=29></td>
                         <td class="clickableBox" id=30></td>
                         <td class="clickableBox" id=31></td>
-                        <td class="clickableBox" id=23></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=24></td>
@@ -109,7 +104,6 @@
                         <td class="clickableBox" id=31></td>
                         <td class="clickableBox" id=32></td>
                         <td class="clickableBox" id=33></td>
-                        <td class="clickableBox" id=34></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=35></td>
@@ -122,7 +116,6 @@
                         <td class="clickableBox" id=42></td>
                         <td class="clickableBox" id=43></td>
                         <td class="clickableBox" id=44></td>
-                        <td class="clickableBox" id=45></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=46></td>
@@ -135,7 +128,6 @@
                         <td class="clickableBox" id=53></td>
                         <td class="clickableBox" id=54></td>
                         <td class="clickableBox" id=55></td>
-                        <td class="clickableBox" id=56></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=57></td>
@@ -148,7 +140,6 @@
                         <td class="clickableBox" id=64></td>
                         <td class="clickableBox" id=65></td>
                         <td class="clickableBox" id=66></td>
-                        <td class="clickableBox" id=67></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=68></td>
@@ -161,7 +152,6 @@
                         <td class="clickableBox" id=75></td>
                         <td class="clickableBox" id=76></td>
                         <td class="clickableBox" id=77></td>
-                        <td class="clickableBox" id=78></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=79></td>
@@ -174,7 +164,6 @@
                         <td class="clickableBox" id=86></td>
                         <td class="clickableBox" id=87></td>
                         <td class="clickableBox" id=88></td>
-                        <td class="clickableBox" id=89></td>
                     </tr>
                     <tr>
                         <td class="clickableBox" id=90></td>
@@ -187,8 +176,8 @@
                         <td class="clickableBox" id=97></td>
                         <td class="clickableBox" id=98></td>
                         <td class="clickableBox" id=99></td>
-                        <td class="clickableBox" id=100></td>
                     </tr>
+                    </tbody>
                 </table>
 
                 <!-- <table id="gameTable">
@@ -201,7 +190,8 @@
                 <h3>Rules</h3>
                 <ul>
                     <li>Sink the computers ships. The computer has ships already placed on the grid. Click on a box of your choose to
-                        send a missle. If missle hits a part of the ship, it will turn red. 
+                        send a missle. If missle hits a part of the ship, it will turn yellow. You will only have 40 clicks to sink ALL ships,
+                        otherwise you lose. Refresh page to play again.
                     </li>
 
                 </ul>

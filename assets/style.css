@@ -20,6 +20,11 @@ h2 {
     line-height: 35px;
 }
 
+p {
+  text-align: center;
+  font-size: larger;
+}
+
 .grid { margin:1em auto; border-collapse:collapse }
 .grid td {
     cursor:pointer;
@@ -38,6 +43,7 @@ color: #14679E;
 background-color: navy;
 text-align: center;
 }
+
 td.clicked {
   background-color:yellow;
   font-weight:bold; color:red;
