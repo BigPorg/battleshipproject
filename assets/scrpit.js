@@ -25,7 +25,7 @@ const getGif = () => {
     function init() {
         document.getElementById("quote-home").addEventListener("click", event => {
             event.preventDefault(); //to stop the page reload
-            let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=sinking`;
+            let url = 'https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=sinking';
             let str = document.getElementById("search").value.trim();
             url = url.concat(str);
             console.log(url);
